@@ -121,7 +121,7 @@ export class BasketComponent implements onInit {
   ) { }
   
   public ngOnInit() {
-    this.items = this.basketService.loadItems();
+    this.items$ = this.basketService.loadItems();
   }
 
   public increaseQuantity(item: Item) {
